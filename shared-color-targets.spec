@@ -3,7 +3,7 @@
 Summary: Shared color targets for creating color profiles
 Name: shared-color-targets
 Version: 0.0.1
-Release: %mkrel 0.%{alphatag}.1
+Release: %mkrel 0.%{alphatag}.2
 URL: http://github.com/hughsie/shared-color-targets
 Source0: http://people.freedesktop.org/~hughsient/releases/%{name}-%{version}.tar.gz
 License: GPLv2+ and Public Domain and CC-BY-SA
