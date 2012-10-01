@@ -1,14 +1,11 @@
-%define alphatag 20091218
-
 Summary: Shared color targets for creating color profiles
 Name: shared-color-targets
-Version: 0.1.0
-Release: %mkrel 1
+Version: 0.1.1
+Release: 1
 URL: http://github.com/hughsie/shared-color-targets
 Source0: http://people.freedesktop.org/~hughsient/releases/%{name}-%{version}.tar.xz
-License: GPLv2+ and Public Domain and CC-BY-SA
+License: GPLv2+ and Public Domain and Creative Commons Attribution-ShareAlike
 Group: System/Libraries
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 
 %description 
@@ -24,14 +21,9 @@ with Fedora.
 %configure2_5x
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root,-)
 %doc AUTHORS COPYING
 %dir %{_datadir}/color/targets
 %{_datadir}/color/targets/*.it8
