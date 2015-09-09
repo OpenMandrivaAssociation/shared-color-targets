@@ -2,8 +2,8 @@
 
 Summary:	Shared color targets for creating color profiles
 Name:		shared-color-targets
-Version:	0.1.2
-Release:	2
+Version:	0.1.5
+Release:	1
 URL:		http://github.com/hughsie/shared-color-targets
 Source0:	http://people.freedesktop.org/~hughsient/releases/%{name}-%{version}.tar.xz
 License:	GPLv2+ and Public Domain and CC-BY-SA
@@ -20,7 +20,7 @@ with Fedora.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 
 %install
 %makeinstall_std
@@ -39,21 +39,3 @@ with Fedora.
 %{_datadir}/color/targets/wolf_faust/reflective/*.it8
 %dir %{_datadir}/color/targets/wolf_faust/transmissive
 %{_datadir}/color/targets/wolf_faust/transmissive/*.it8
-
-
-
-%changelog
-* Mon Sep 12 2011 Götz Waschk <waschk@mandriva.org> 0.1.0-1mdv2012.0
-+ Revision: 699457
-- new version
-- xz tarball
-
-* Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 0.0.1-0.20091218.2mdv2011.0
-+ Revision: 614861
-- the mass rebuild of 2010.1 packages
-
-* Mon Jan 18 2010 Frederic Crozat <fcrozat@mandriva.com> 0.0.1-0.20091218.1mdv2010.1
-+ Revision: 493217
-- import shared-color-targets
-
-
