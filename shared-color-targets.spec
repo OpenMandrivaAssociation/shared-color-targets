@@ -8,6 +8,11 @@ License:	GPLv2+ and Public Domain and CC-BY-SA
 Group:		System/Libraries
 BuildArch:	noarch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 The shared-color-targets package contains various targets which are useful for
 programs that create ICC profiles.
